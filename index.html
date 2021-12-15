@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/weight/css/main.css">
+    <script src="/weight/js/main.js"></script>
+</head>
+
+<body>
+    <h1>Súly váltás</h1>
+    <div id="mainContainer">
+
+
+        <div id="inputContainer">
+            <input type="text" id="in">
+        </div>
+
+
+        <div id="radioContainer">
+                <input type="radio" name="gombok" value="g" id="gradio">g
+                <input type="radio" name="gombok" value="dkg"id="dkgradio">dkg
+                <input type="radio" name="gombok" value="kg"id="kgradio">kg
+                <input type="radio" name="gombok" value="t"id="tradio">t
+                <input type="radio"name="gombok" value="oz"id="ozradio">oz
+                <input type="radio"name="gombok" value="lbs"id="lbsradio">lbs
+        </div>
+
+        <button onclick="converter()">Váltás</button>
+        <div id="result">
+            <h2 id="h2g"></h2>
+
+            <h2 id="h2dkg"></h2>
+
+            <h2 id="h2kg"></h2>
+
+            <h2 id="h2t"></h2>
+
+            <h2 id="h2oz"></h2>
+
+            <h2 id="h2lbs"></h2>
+        </div>
+    </div>
+    
+
+</body>
+
+</html>
