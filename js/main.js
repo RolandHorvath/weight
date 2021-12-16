@@ -137,3 +137,7 @@ function character() {
     image = document.getElementById('gif');
     image.src = animations[number];
 }
+function main(){
+    window.open('https://remus1998.github.io/ConverterGatherer/', "_self") 
+  }
+

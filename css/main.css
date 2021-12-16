@@ -4,18 +4,40 @@
 }
 body {
   width: 100%;
-  background-image: linear-gradient(to bottom right, rgba(184, 149, 53, 0.438), rgba(161, 11, 11, 0.432));
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(184, 149, 53, 0.438),
+    rgba(161, 11, 11, 0.432)
+  );
 }
 h1 {
   text-align: center;
+  margin-top: 10px;
 }
 #mainContainer {
   width: 50%;
-  height: 900px;
+  height: 950px;
   border-radius: 5px;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 20px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.26);
+}
+
+#bkbtn {
+  width: 125px;
+  height: 35px;
+  border-radius: 5px;
+  position: absolute;
+  left: 30px;
+  top: 60px;
+  font-size: 18px;
+  font-weight: 700;
+  color: lightsalmon;
+  border: 3px solid lightsalmon;
+}
+#bkbtn:hover {
+  color: white;
+  background-color: lightsalmon;
 }
 
 p {
@@ -69,7 +91,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   width: 80%;
-  height: 220px;
+  height: 260px;
   border: 2px solid black;
   border-radius: 5px;
   margin: auto;
@@ -84,6 +106,7 @@ p {
 #result h2:hover {
   background-color: gray;
   color: lightgrey;
+  border-radius: 3px;
 }
 
 #result #h2lbs {
@@ -91,15 +114,15 @@ p {
 }
 
 input::-webkit-input-placeholder {
-    transition: 0.3s;
-    color: rgb(0, 0, 0);
+  transition: 0.3s;
+  color: rgb(0, 0, 0);
 }
 
 img {
-    width: 300px;
-    position: absolute;
-    top: 150px;
-    right: 35%;
+  width: 300px;
+  position: absolute;
+  top: 150px;
+  right: 35%;
 }
 
 #backbtn {
@@ -122,4 +145,7 @@ img {
 #backbtn:active {
   background-color: rgb(78, 61, 15);
   color: rgba(255, 255, 255, 0.486);
+}
+form {
+  position: absolute;
 }
