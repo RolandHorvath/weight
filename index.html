@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/weight-converter/weight/css/main.css" />
-    <script src="/weight-converter/weight/js/main.js"></script>
+    <!--<link rel="stylesheet" href="/weight-converter/weight/css/main.css" />-->
+    <link rel="stylesheet" href="/weight/css/main.css" />
+    <!--<link <script src="/weight-converter/weight/js/main.js"></script> />-->
+    <script src="/weight/js/main.js"></script>
+
   </head>
 
   <body>
@@ -17,17 +20,24 @@
         <input type="text" id="in" placeholder="Give me a number" />
         <p>Válasz miről szeretnéd váltani?</p>
         <div id="radioContainer">
+            
           <input type="radio" name="gombok" value="g" id="gradio" /> g
+
           <input type="radio" name="gombok" value="dkg" id="dkgradio" /> dkg
+
           <input type="radio" name="gombok" value="kg" id="kgradio" /> kg
+
           <input type="radio" name="gombok" value="t" id="tradio" /> T
+
           <input type="radio" name="gombok" value="oz" id="ozradio" /> oz
+
           <input type="radio" name="gombok" value="lbs" id="lbsradio" /> lbs
+
         </div>
         <button onclick="converter()">Váltás</button>
       </div>
 
-      <div id="result">
+      <div id="result" style="visibility: hidden;">
         <h2 id="h2g"></h2>
 
         <h2 id="h2dkg"></h2>
