@@ -15,7 +15,7 @@ h1 {
   border-radius: 5px;
   margin: auto;
   margin-top: 40px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.26);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.26);
 }
 
 p {
@@ -98,7 +98,7 @@ input::-webkit-input-placeholder {
 img {
     width: 300px;
     position: absolute;
-    top: 80px;
+    top: 150px;
     right: 35%;
 }
 
