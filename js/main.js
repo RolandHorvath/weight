@@ -2,16 +2,22 @@
 function converter() {
     if (document.getElementById('gradio').checked) {
         g();
+        character();
     } else if (document.getElementById('kgradio').checked) {
         kg();
+        character();
     } else if (document.getElementById('ozradio').checked) {
         oz();
+        character();
     } else if (document.getElementById('lbsradio').checked) {
         lbs();
+        character();
     } else if (document.getElementById('dkgradio').checked) {
         dkg();
+        character();
     } else if (document.getElementById('tradio').checked) {
         t();
+        character();
     }
 }
 
@@ -118,4 +124,16 @@ function t() {
     document.getElementById("h2dkg").innerHTML = t * 100000 + "<sub>dkg</sub>";
 
     document.getElementById("h2t").innerHTML = t * 1 + "<sub>t</sub>";
+}
+
+number = 0;
+var animations = ['img/weight.gif',
+    'img/weight.gif',
+    'img/weight.gif'
+];
+
+
+function character() {
+    image = document.getElementById('gif');
+    image.src = animations[number];
 }
